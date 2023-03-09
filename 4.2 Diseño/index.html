@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Últimas Olimpiadas</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	</head>
+	
+<body>
+	<script>
+		$(document).ready(function(){
+  			$(".owl-carousel").owlCarousel({
+    			loop:true,
+    			margin:10,
+    			nav:true,
+    			items:1
+  			});
+
+              $(".seul").click(()=> {
+                $("img").hide()
+                $("#Mseul").show()
+                $("#M2seul").show()
+                $("#banner").show()
+                $("#Iseul").show()
+                $("#I2seul").show()
+            })
+            $(".barcelona").click(()=> {
+                $("img").hide()
+                $("#Mbarcelona").show()
+                $("#M2barcelona").show()
+                $("#banner").show()
+                $("#Ibarcelona").show()
+                $("#I2barcelona").show()
+                
+            })
+            $(".atlanta").click(()=> {
+                $("img").hide()
+                $("#Matlanta").show()
+                $("#banner").show()
+                $("#Iatlanta").show()
+                
+            })
+            $(".sidney").click(()=> {
+                $("img").hide()
+                $("#Msidney").show()
+                $("#banner").show()
+                $("#Isidney").show()
+                
+            })
+            $(".atenas").click(()=> {
+                $("img").hide()
+                $("#Matenas").show()
+                $("#banner").show()
+                $("#Iatenas").show()
+                
+            })
+            $(".pekin").click(()=> {
+                $("img").hide()
+                $("#Mpekin").show()
+                $("#M2pekin").show()
+                $("#banner").show()
+                $("#Ipekin").show()
+                $("#I2pekin").show()
+                
+            })
+            $(".londres").click(()=> {
+                $("img").hide()
+                $("#Mlondres").show()
+                $("#M2londres").show()
+                $("#M3londres").show()
+                $("#banner").show()
+                $("#Ilondres").show()
+                $("#I2londres").show()
+                $("#I3londres").show()
+               
+            })
+            $(".losAngeles").click(()=> {
+                $("img").hide()
+                $("#MlosAngeles").show()
+                $("#M2losAngeles").show()
+                $("#banner").show()
+                $("#IlosAngeles").show()
+                $("#I2losAngeles").show()
+               
+            })
+		});
+
+		
+	</script>
+	<header>
+		<img src="img/banner.jpg" alt="Imagen de cabecera" id="banner">
+	</header>
+	<div id="wrapper">
+		<div class="botones">
+            <button class="seul" id="seul">Seúl 1988</button>
+            <button class="barcelona" id="barcelona">Barcelona 1992</button>
+            <button class="atlanta" id="atlanta">Atlanta 1996</button>
+            <button class="sidney" id="sidney">Sídney 2000</button>
+            <button class="atenas" id="atenas">Atenas 2004</button>
+            <button class="pekin" id="pekin">Pekín 2008</button>
+            <button class="londres" id="londres">Londres 2012</button>
+            <button class="losAngeles" id="losAngeles">Los Ángeles 1984</button>
+        </div>
+		<div id="visor">
+			<div class="owl-carousel">
+				<div class="item"><img id="Iseul" src="img/seul1988/01.jpeg"></div>
+                <div class="item"><img id="I2seul" src="img/seul1988/02.jpeg"></div>
+                <div class="item"><img id="Ibarcelona" src="img/barcelona1992/01.jpg"></div>
+                <div class="item"><img id="I2barcelona" src="img/barcelona1992/02.jpg"></div>
+                <div class="item"><img id="Iatlanta" src="img/atlanta1996/02.jpg"></div>
+                <div class="item"><img id="Isidney" src="img/sidney2000/01.jpg"></div>
+                <div class="item"><img id="I2sidney" src="img/sidney2000/02.jpeg"></div>
+                <div class="item"><img id="Iatenas" src="img/atenas2004/01.jpg"></div>
+                <div class="item"><img id="Ipekin" src="img/pekin2008/01.jpg"></div>
+                <div class="item"><img id="I2pekin" src="img/pekin2008/02.jpeg"></div>
+                <div class="item"><img id="Ilondres" src="img/londres2012/01.jpg"></div>
+                <div class="item"><img id="I2londres" src="img/londres2012/02.jpeg"></div>
+                <div class="item"><img id="I3londres" src="img/londres2012/04.jpg"></div>
+                <div class="item"><img id="IlosAngeles" src="img/losAngeles84/01.jpeg"></div>
+                <div class="item"><img id="I2losAngeles" src="img/losAngeles84/02.jpg"></div>
+				
+			</div>
+		</div>
+		
+
+		<div id="galeria">
+			<div id="miniaturas">
+				<section class="imagenes">
+					<img class="miniatura seul" id="Mseul" src="img/seul1988/01.jpeg" alt="">
+                    <img class="miniatura seul" id="M2seul" src="img/seul1988/02.jpeg" alt="">
+                    <img class="miniatura barcelona" id="Mbarcelona" src="img/barcelona1992/01.jpg" alt="">
+                    <img class="miniatura barcelona" id="M2barcelona" src="img/barcelona1992/02.jpg" alt="">
+                    <img class="miniatura atlanta" id="Matlanta" src="img/atlanta1996/02.jpg" alt="">
+                    <img class="miniatura sidney" id="Msidney" src="img/sidney2000/01.jpg" alt="">
+                    <img class="miniatura sidney" id="M2sidney" src="img/sidney2000/02.jpeg" alt="">
+                    <img class="miniatura atenas" id="Matenas" src="img/atenas2004/01.jpg" alt="">
+                    <img class="miniatura pekin" id="Mpekin" src="img/pekin2008/01.jpg" alt="">
+                    <img class="miniatura pekin" id="M2pekin" src="img/pekin2008/02.jpeg" alt="">
+                    <img class="miniatura londres" id="Mlondres" src="img/londres2012/01.jpg" alt="">
+                    <img class="miniatura londres" id="M2londres" src="img/londres2012/02.jpeg" alt="">
+                    <img class="miniatura londres" id="M3londres" src="img/londres2012/04.jpg" alt="">
+                    <img class="miniatura losAngeles" id="MlosAngeles" src="img/losAngeles84/01.jpeg" alt="">
+                    <img class="miniatura losAngeles" id="M2losAngeles" src="img/losAngeles84/02.jpg" alt="">
+                    
+
+
+
+		  		</section>
+			
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<h3>Creado por: Antonio Juan Ríos Fernández</h3>
+	</footer>
+</body>
+</html>
